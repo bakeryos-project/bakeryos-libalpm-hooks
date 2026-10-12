@@ -1,0 +1,19 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = linux
+Target = linux-lts
+Target = linux-zen
+Target = systemd
+Target = nvidia
+Target = mesa
+Target = gnome
+Target = gdm
+Target = bakeryos-desktop-setup
+Target = bakeryos-update
+
+[Action]
+Description = Send a notification requesting a system restart.
+When = PostTransaction
+Exec = /usr/bin/bakeryos-reboot-notify

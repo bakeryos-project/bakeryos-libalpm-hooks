@@ -1,6 +1,11 @@
 #!/bin/bash
 
 set -e
-install -Dm644 \
-    /usr/share/bakeryos/release/os-release \
-    /usr/lib/os-release
+
+SOURCE="/usr/share/bakeryos/release/os-release"
+TARGET="/usr/lib/os-release"
+
+[[ -f "$SOURCE" ]] || exit 0
+cmp -s "$SOURCE" "$TARGET" && exit 0
+
+install -Dm644 "$SOURCE" "$TARGET"

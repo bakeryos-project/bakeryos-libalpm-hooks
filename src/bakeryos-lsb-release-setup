@@ -1,6 +1,12 @@
 #!/bin/bash
 
 set -e
-install -Dm644 \
-    /usr/share/bakeryos/release/lsb-release \
-    /etc/lsb-release
+
+SOURCE="/usr/share/bakeryos/release/lsb-release"
+TARGET="/etc/lsb-release"
+
+if [[ ! -f "$SOURCE" ]]; then
+    exit 0
+fi
+
+install -Dm644 "$SOURCE" "$TARGET"

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/bakeryos-project/bakeryos-libalpm-hooks/compare/v1.2.0...v1.2.1) (2026-10-31)
+
+
+### Bug Fixes
+
+* add bakeryos-release to hook target ([0fd514f](https://github.com/bakeryos-project/bakeryos-libalpm-hooks/commit/0fd514f309fbcaa87d414e2ee156a9d848ced370))
+
 ## [1.2.0](https://github.com/bakeryos-project/bakeryos-libalpm-hooks/compare/v1.1.0...v1.2.0) (2026-10-31)
 
 

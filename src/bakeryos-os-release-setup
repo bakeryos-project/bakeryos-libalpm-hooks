@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+install -Dm644 \
+    /usr/share/bakeryos/release/os-release \
+    /usr/lib/os-release

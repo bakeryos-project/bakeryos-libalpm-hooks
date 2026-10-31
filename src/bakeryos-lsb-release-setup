@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+install -Dm644 \
+    /usr/share/bakeryos/release/lsb-release \
+    /etc/lsb-release

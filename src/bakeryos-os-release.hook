@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = filesystem
+
+[Action]
+Description = Apply BakeryOS os-release branding
+When = PostTransaction
+Exec = /usr/bin/bakeryos-os-release-setup
